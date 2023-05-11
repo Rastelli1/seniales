@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nwbl03ueqyor"]
+
+[ext_resource type="Texture2D" uid="uid://7icqglxkk1u1" path="res://assets/block_red.png" id="1"]
+
+[node name="RedGenerator" type="TextureButton"]
+texture_normal = ExtResource("1")
