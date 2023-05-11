@@ -4,3 +4,5 @@ res://scenes/Buttons/RedGenerator/RedGenerator.gd
 res://scenes/Buttons/VioletGenerator/VioletGenerator.gd
 res://scenes/Blocks/Red/BlockRed.tscn
 res://scenes/Blocks/Violet/BlockViolet.tscn
+res://scenes/Blocks/Red/BlockRed.gd
+res://scenes/Blocks/Violet/BlockViolet.gd
