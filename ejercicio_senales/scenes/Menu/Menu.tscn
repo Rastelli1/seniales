@@ -1,12 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://bbmn8kr4st0u6"]
+[gd_scene load_steps=10 format=3 uid="uid://bbmn8kr4st0u6"]
 
 [ext_resource type="Texture2D" uid="uid://dgcw0vs3drey1" path="res://assets/background.png" id="1"]
-[ext_resource type="PackedScene" path="res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dgt0ua0oihlrf" path="res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://nwbl03ueqyor" path="res://scenes/Buttons/RedGenerator/RedGenerator.tscn" id="3"]
 [ext_resource type="PackedScene" path="res://scenes/Buttons/Reset/Reset.tscn" id="4"]
 [ext_resource type="Script" path="res://scenes/Buttons/RedGenerator/RedGenerator.gd" id="4_5whpg"]
 [ext_resource type="Script" path="res://scenes/Menu/Menu.gd" id="5"]
 [ext_resource type="Script" path="res://scenes/Buttons/VioletGenerator/VioletGenerator.gd" id="6_bfun8"]
+[ext_resource type="Script" path="res://scenes/Buttons/Reset/Reset.gd" id="8_m3ylf"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(1519.98, 67.3924)
@@ -38,6 +39,7 @@ offset_left = 433.0
 offset_top = 210.0
 offset_right = 585.0
 offset_bottom = 277.0
+script = ExtResource("8_m3ylf")
 
 [node name="Floor" type="StaticBody2D" parent="."]
 position = Vector2(513.885, 577.225)
@@ -55,3 +57,4 @@ text = "Cantidad de Instancias:
 
 [connection signal="button_down" from="RedGenerator" to="RedGenerator" method="_on_button_down"]
 [connection signal="button_down" from="VioletGenerator" to="VioletGenerator" method="_on_button_down"]
+[connection signal="button_down" from="Reset" to="Reset" method="_on_button_down"]
