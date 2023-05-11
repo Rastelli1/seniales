@@ -53,5 +53,5 @@ offset_bottom = 92.0
 text = "Cantidad de Instancias:
 "
 
-[connection signal="button_down" from="RedGenerator" to="." method="_on_red_generator_button_down"]
-[connection signal="button_down" from="VioletGenerator" to="." method="_on_violet_generator_button_down"]
+[connection signal="button_down" from="RedGenerator" to="RedGenerator" method="_on_button_down"]
+[connection signal="button_down" from="VioletGenerator" to="VioletGenerator" method="_on_button_down"]
